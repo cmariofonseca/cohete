@@ -3,14 +3,30 @@
   height: 100vh;
   background-image: url(../../../assets/controlPanel.jpg);
   background-size: cover;
-  /*
-  Imagen tomada de:
-  https: //pixabay.com/es/coche-veloc%C3%ADmetro-veh%C3%ADculo-2370636/
-  Comprimida en un 60% por la aplicación:
-  https: //tinypng.com/
-  */
   display: inline-flex;
   padding-top: 20%;
+}
+
+.control .buttonPlanet {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 3px;
+}
+
+.control .buttonRoutes {
+  width: 270px;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 3px;
+}
+
+.control .buttonRoutes>button {
+  margin: 0 5px;
 }
 
 .control .motor {

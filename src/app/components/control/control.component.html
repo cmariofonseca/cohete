@@ -1,4 +1,12 @@
 <div class="control">
+
   <div class="motor"> <app-motor></app-motor> </div>
   <div class="cabina"> <app-cabina></app-cabina> </div>
+
+  <div class="buttonRoutes">
+    <button [routerLink]="['/inicio']" type="button" class="btn btn-outline-primary">Inicio</button>
+    <button [routerLink]="['/control']" type="button" class="btn btn-outline-primary">Control</button>
+    <button [routerLink]="['/planetas']" type="button" class="btn btn-outline-primary">Planetas</button>
+  </div>
+
 </div>

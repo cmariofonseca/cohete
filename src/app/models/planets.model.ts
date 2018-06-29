@@ -1,29 +1,9 @@
 export class Planets {
-  msg: string;
-  images: Planet;
-}
-
-export class Planet {
-  planet: DataPlanet;
-}
-
-export class DataPlanet {
+  planet: string;
   img: string;
-  degrees: string;
+  degrees: number;
 }
 
-/*export class Planets {
-  userId: number;
-  id: number;
-  title: string;
-}*/
-
-/*
-{
-  "msg": "bien hecho, ...",
-    "images": {
-    "mercurio": {
-      "img": "http://www.centroastrologico.com",
-        "degrees": "5"
-    },
-*/
+export class Object {
+  images: object;
+}

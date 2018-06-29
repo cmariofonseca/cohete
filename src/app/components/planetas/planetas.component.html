@@ -1,27 +1,33 @@
 <!-- ¡Créditos al autor por la imagen del cohete! <a href='http://dryicons.com/icon/spaceship-icon-5255'> Icon by Dryicons </a> -->
 <div class="space">
-  <p>Holas</p>
-  <ul *ngFor="let d of data$ | async">
-    <li></li>
-    <li>{{ d.msg }}</li>
-    <li>{{ d.images }}</li>
-    <li>{{ d.images.planet }}</li>
-    <li>{{ d.images.planet.degrees }}</li>
-    <li>{{ d.images.planet.img }}</li>
-  </ul>
-  <!--<ul *ngFor="let d of data">
-    <li>{{ d.id }}</li>
-    <li>hola: {{ d.title }}</li>
-  </ul> -->
-  <!--<section class="status">
-    <ul>
-      <li>lalala</li>
-      <li>Hola </li>
-    </ul>
-    <h3>¡Planeta a avistado a Y grados!</h3>
+
+  <section class="status">
+    <h3>¡Planeta {{ planet | uppercase }} avistado a {{ degrees | number: '1.4-4' }} grados!</h3>
   </section>
   <section class="rocket"></section>
   <div class="tresA">
     <img src="/assets/logo.png" alt="">
-  </div> -->
+  </div>
+
+  <div class="buttonPlanet">
+    <div class="alert alert-info" role="alert">
+      PLANETAS
+    </div>
+    <button
+      *ngFor="let p of planets"
+      type="button"
+      class="btn btn-outline-info btn-block"
+      [class.selected]="p === selectedPlanet"
+      (click)="selectPlanet(p)">{{ p.planet | uppercase }}
+    </button>
+  </div>
+
+  <div class="buttonRoutes">
+    <button [routerLink]="['/inicio']" type="button" class="btn btn-outline-primary">Inicio</button>
+    <button [routerLink]="['/control']" type="button" class="btn btn-outline-primary">Control</button>
+    <button [routerLink]="['/planetas']" type="button" class="btn btn-outline-primary">Planetas</button>
+  </div>
+
+  <div class="imagePlanet"><img src={{img}}/></div>
+
 </div>

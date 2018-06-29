@@ -1,6 +1,45 @@
-/*.space {
+.space {
   height: 100%;
   height: 100vh;
+  z-index: -2;
+}
+
+.space .buttonPlanet {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 3px;
+}
+
+.space .buttonRoutes {
+  width: 270px;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 3px;
+}
+
+.space .buttonRoutes > button {
+  margin: 0 5px;
+}
+
+.space .imagePlanet {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: -1;
+}
+
+.space .imagePlanet > img {
+  width: 100%;
+  height: 100%;
 }
 
 .rocket {
@@ -31,6 +70,7 @@
 
 .status>h3 {
   padding-top: 2%;
-  text-shadow: 0px 0px 20px #FFF;
-  font-size: 24px;
-}*/
+  text-shadow: 0px 0px 30px #000;
+  color: white;
+  font-size: 30px;
+}

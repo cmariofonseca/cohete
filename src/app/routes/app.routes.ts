@@ -12,7 +12,8 @@ const APP_ROUTES: Routes = [
   { path: 'motor', component: MotorComponent },
   { path: 'control', component: ControlComponent },
   { path: 'planetas', component: PlanetasComponent },
+  { path: 'planetas/:planeta', component: PlanetasComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: true });
