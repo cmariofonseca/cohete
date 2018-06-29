@@ -1,0 +1,22 @@
+.control {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/controlPanel.jpg);
+  background-size: cover;
+  /*
+  Imagen tomada de:
+  https: //pixabay.com/es/coche-veloc%C3%ADmetro-veh%C3%ADculo-2370636/
+  Comprimida en un 60% por la aplicación:
+  https: //tinypng.com/
+  */
+  display: inline-flex;
+  padding-top: 20%;
+}
+
+.control .motor {
+  width: 50%;
+}
+
+.control .cabina {
+  width: 50%;
+}

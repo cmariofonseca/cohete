@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /* Eliminé la declaracion de la fuente de los demas componentes pues desde aqui se declara globalmente */
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

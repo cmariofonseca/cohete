@@ -1,0 +1,13 @@
+.cabin {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 60px;
+  vertical-align: middle;
+  color: #ff4747;
+}

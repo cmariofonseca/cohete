@@ -1,0 +1,84 @@
+.space {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/outerSpace.jpg);
+  /*
+  Imagen tomada de:
+  https://pixabay.com/es/sunrise-espacio-exterior-mundo-1765027/
+  Comprimida en un 38% gracias a la aplicacion:
+  https://tinypng.com/
+  */
+}
+
+.rocket {
+  height: 90%;
+  background: url(../../../assets/spaceship.svg) no-repeat center;
+  /* Centrando y posicionando el reto 1, inicio */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centrando y posicionando el reto 1, fin */
+}
+
+.rocket path {
+  fill: white;
+}
+
+
+/* Desarrollo del reto 1, inicio */
+.space .rocket .task1 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space .rocket .task1 .motor {
+  width: 10%;
+  border: 3px solid red;
+  padding: 2%;
+  margin-right: 2%;
+}
+
+.space .rocket .task1 .cabina {
+  width: 10%;
+  height: 10%;
+  border: 3px solid red;
+  padding: 1%;
+  margin-left: 2%;
+}
+
+/* Impide ejecución del reto 2 desde el reto 1 */
+.space .rocket .task1 .blocking {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+/* Desarrollo del reto 1, fin */
+
+
+.tresA {
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
+.tresA>img {
+  float: right;
+  width: 70%;
+}
+
+.status {
+  height: 10%;
+  text-align: center;
+  color: white;
+}
+
+.status>h3 {
+  padding-top: 2%;
+  text-shadow: 0px 0px 20px #FFF;
+  font-size: 24px;
+}
